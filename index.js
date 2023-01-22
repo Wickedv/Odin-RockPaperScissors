@@ -57,15 +57,16 @@ function logic(p, c){
 function game(){
     
     let array = []
+    let asdf;
 
     for( let i = 0; i<5; i++ )
     {
-       array[i] = logic(prompt ("rock paper scissor"), getComputerChoice())
+      asdf = logic(prompt ("rock paper scissor"), getComputerChoice())
 
+      console.log(asdf)
     }
 
-    return array
 }
 
 
-console.log(game())
+game()
