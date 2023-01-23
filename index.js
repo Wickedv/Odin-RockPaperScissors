@@ -19,7 +19,7 @@ function getComputerChoice(){
 let computerSelection = getComputerChoice()
 
 function logic(p, c){
-
+  
     playerSelection = p.toLowerCase()
     computerSelection = c.toLowerCase()
 
@@ -69,4 +69,9 @@ function game(){
 }
 
 
-game()
+//game()
+const doc = document.querySelectorAll("button")
+//doc.addEventListener('click', (e)=>console.log(e.target.innerText))
+doc.forEach(d => {d.addEventListener("click", (e) => logic((e.target.innerText), getComputerChoice())
+    
+)});
